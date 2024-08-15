@@ -23,8 +23,8 @@ const Tokenomics = () => {
               </li>
             ))}
           </ul>
-          <div className="relative  flex items-center  gap-5 h-14 double-box tokenomics-address bg-white rounded-xl border-3 border-black px-5 mt-9 w-full">
-            <p className="text-sm md:text-xl font-bold tracking-wider">
+          <div className="relative  flex items-center  gap-5 h-14 double-box tokenomics-address bg-white rounded-xl border-3 border-black px-2 md:px-5 mt-9 w-full">
+            <p className="text-xs md:text-xl font-bold tracking-wider">
               0x87D988SZAS88DSS8D7SD7S877939ZAAQD8012
             </p>
             <IoCopyOutline className="text-3xl text-dark-purple" />
