@@ -27,7 +27,7 @@ const Tokenomics = () => {
             <p className="text-xs md:text-xl font-bold tracking-wider">
               0x87D988SZAS88DSS8D7SD7S877939ZAAQD8012
             </p>
-            <IoCopyOutline className="text-3xl text-dark-purple" />
+            <IoCopyOutline size={24} className="text-3xl text-dark-purple" />
           </div>
         </div>
         <img src="/img/tokenomics.png" alt="" className="w-full md:w-2/5" />
