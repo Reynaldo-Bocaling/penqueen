@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Iceland&family=Matemasie&family=Sigmar+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Acme", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: linear-gradient(to right,
+            #dda9ff 0%,
+            #78d6fb 50%,
+            #6bffe6 100%);
+}
+
+
+.text-stroke {
+    -webkit-text-stroke: #5200bd 1px;
+}
+
+.frozen-button {
+    background: linear-gradient(to right, #b3e5fc, #81d4fa, #57caff, #08c7f7);
+    border: 2px solid #4fc3f7;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 175, 249, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.frozen-button:hover {
+    background: linear-gradient(to right, #81d4fa, #4fc3f7, #29b6f6, #0288d1);
+    box-shadow: 0 0 20px rgba(29, 182, 246, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+
+.double-box::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    height: 100%;
+    width: 100%;
+    background: #0ea5e9;
+    border-radius: .75rem;
+    border: 3px solid #5200bd;
+    z-index: -1;
+}
+
+.double-box.child::after {
+
+    background: #00fee5;
+
+}
+
+.double-box.tokenomics-address::after {
+
+    border-radius: .75rem;
+    background: #ad6eff;
+
+}
+
+.blurd-effect {
+    background: rgba(238, 236, 236, 0.5);
+    backdrop-filter: blur(5px);
+    border: 2px #fff solid;
+}
